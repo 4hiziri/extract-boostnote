@@ -58,3 +58,10 @@ def main(dir):
     csons = files_boostnote('notes')
     cp_boostnotes(csons, jsons, 'notes', root)
     return
+
+
+if __name__ == '__main__':
+    import sys
+    boostnote_dir = sys.argv[1]
+
+    main(boostnote_dir)
